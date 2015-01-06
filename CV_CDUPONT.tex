@@ -1,0 +1,83 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Corentin}
+\familyname{Dupont}
+\title{Senior Researcher}
+\address{via Villa Belfonte, 7}{38123 Trento}
+\mobile{+39 380 6312093}
+\email{corentin.dupont@gmail.com}
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{On-Going (3rd year)}{PhD}{University of Trento}{Trento}{}{Thesis on energy management in data centres}
+\cventry{2003}{MsD}{Institut Supérieur de l'Electronique et du Numérique}{Toulon}{}{}
+%\cventry{Languages}{}{French: Native, English: fluent (647/700 TOEFL, 980/990 TOEIC), Italian: fluent}{}{}{}
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
+\section{Experience}
+\cventry{year--year}{Job title}{Employer}{City}{}{Description}                % arguments 3 to 6 are optional
+\cventry{year--year}{Job title}{Employer}{City}{}{Description}                % arguments 3 to 6 are optional
+\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}% arguments 3 to 6 are optional
+
+\section{Languages}
+\cvlanguage{English}{Fluent}{647/700 TOEFL, 980/990 TOEIC, work \& everyday language}
+\cvlanguage{Italian}{Fluent}{living in Italy since 2010}
+\cvlanguage{French}{Native}{}
+
+\section{Computer skills}
+\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+\cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+\section{Interests}
+\cvline{hobby 1}{\small Description}
+\cvline{hobby 2}{\small Description}
+\cvline{hobby 3}{\small Description}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\section{Extra 1}
+\cvlistitem{Item 1}
+\cvlistitem{Item 2}
+\cvlistitem[+]{Item 3}            % optional other symbol
+
+\section{Extra 2}
+\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+\cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

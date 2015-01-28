@@ -1,18 +1,14 @@
 \documentclass[11pt,a4paper]{moderncv}
 
-% moderncv themes
-\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-%\moderncvtheme[green]{classic}                % idem
+\moderncvtheme[blue]{casual}
 
-\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[utf8]{inputenc}
 
-% adjust the page margins
 \usepackage[scale=0.8]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 \AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
-% personal data
 \firstname{Corentin}
 \familyname{Dupont}
 \title{Senior Researcher}
@@ -33,7 +29,6 @@
 \section{Education}
 \cventry{On-Going (3rd year)}{PhD}{University of Trento}{Trento}{}{Thesis on energy management in data centres}
 \cventry{2003}{MsD}{Institut Supérieur de l'Electronique et du Numérique}{Toulon}{}{}
-%\cventry{Languages}{}{French: Native, English: fluent (647/700 TOEFL, 980/990 TOEIC), Italian: fluent}{}{}{}
 
 %\section{Master thesis}
 %\cvline{title}{\emph{Title}}
@@ -41,9 +36,38 @@
 %\cvline{description}{\small Short thesis abstract}
 
 \section{Experience}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description}                % arguments 3 to 6 are optional
-\cventry{year--year}{Job title}{Employer}{City}{}{Description}                % arguments 3 to 6 are optional
-\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}% arguments 3 to 6 are optional
+\cventry{2010--present}{Work Package manager}{Create-Net}{Trento}{}{Leader of Work Package 4 (FIT4Green) and 5 (DC4Cities). Research and design the algorithms and policies for energy-aware optimization of data centre operations.
+\begin{itemize}
+  \item	WP management,
+  \item Algorithmic research, specification and design,
+  \item Implementation of FIT4Green prototype using Constraint Programming,
+  \item Paper writing and project proposal writing.
+\end{itemize}
+}
+\cventry{2011--2012}{Researcher}{Create-Net}{Trento}{}{Research in the area of Internet of Things. Leader of the iCore platform.
+\begin{itemize}
+  \item Research on DSLs to address the diversity of real-world objects,
+  \item Implementation of the iCore platform prototype,
+  \item Coordination of the implementation of the platform.
+\end{itemize}
+}
+\cventry{2003--2008}{Project Leader}{DCNS/EADS}{Aix en Provence, France}{}{Projects for the Norway frigates SKJOLD and the Franco-Italian frigates HORIZON
+\begin{itemize}
+  \item Technical leader and project leader (CMMi 3), with a team of 4 persons for the realization of the Real Time Simulator (DCNS)
+  \item Specification, Conception and development of 5 simulators (calculator in Ada and GUI in C++/Qt) : Fire Control Tracker, Decoy Launcher System, Torpedo Launch System, Air Transceiver, Principal Anti-Air Missile System.
+  \item Evolution of NeVis, a 3D demonstrator for urban warfare (EADS).
+\end{itemize}
+C++, Ada, Qt, Linux, CMMi tools, OWB, Doors, Vega Prime, Delta 3D
+}
+
+\cventry{2009--2010}{Sofware Leader}{PSA Peugeot-Citroën}{Paris, France}{}{Supplier’s management for the automatic gearbox AL4/AT8 for PSA Peugeot Citroën
+\begin{itemize}
+  \item Specification writing
+  \item Management of the supplier (evolutions, technical issues, project management).
+\end{itemize}
+MS-Project, project management tools, SQL.
+}
+
 
 \section{Languages}
 \cvlanguage{English}{Fluent}{647/700 TOEFL, 980/990 TOEIC, work \& everyday language}
@@ -51,26 +75,16 @@
 \cvlanguage{French}{Native}{}
 
 \section{Computer skills}
-\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-\cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\cvcomputer{Operating Systems}{Linux, Windows, Solaris, HP-UX}{Languages}{Haskell, Java, C++, Ada}
+\cvcomputer{Programming techniques}{Constraint Programming, Big Data: Hadoop}{Development and Specification}{Eclipse, Linux tools, Qt, Doors}
+\cvcomputer{Project Management}{CMMi 3 level, MS Project, OWB}{category 6}{XXX, YYY, ZZZ}
 
 \section{Interests}
-\cvline{hobby 1}{\small Description}
-\cvline{hobby 2}{\small Description}
-\cvline{hobby 3}{\small Description}
+\cvline{Paragliding}{\small Flying since 20 years, licenced for taking passengers}
+\cvline{Hacking}{\small Author of a unique game called Nomyx: www.nomyx.net}
+\cvline{Language learning}{\small Spanish, Czech}
 
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
-
-\section{Extra 1}
-\cvlistitem{Item 1}
-\cvlistitem{Item 2}
-\cvlistitem[+]{Item 3}            % optional other symbol
-
-\section{Extra 2}
-\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
-\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
-\cvlistdoubleitem[\Neutral]{Item 3}{}
 
 % Publications from a BibTeX file
 \nocite{*}

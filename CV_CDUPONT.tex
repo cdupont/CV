@@ -3,9 +3,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{bibentry}
 \usepackage[scale=0.8]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
-%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
-\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+%\setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column with the dates
+\AtBeginDocument{\recomputelengths} 
 
 \firstname{Corentin}
 \familyname{Dupont}
@@ -13,14 +12,9 @@
 \address{via Villa Belfonte, 7}{38123 Trento}
 \mobile{+39 380 6312093}
 \email{corentin.dupont@gmail.com}
-%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\photo[64pt]{picture}
+%\nopagenumbers{}
 
-%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
-
-
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
 
@@ -28,12 +22,9 @@
 \cventry{On-Going (3rd year)}{PhD}{University of Trento}{Trento}{}{Thesis on energy management in data centres}
 \cventry{2003}{MsD}{Institut Supérieur de l'Electronique et du Numérique}{Toulon}{}{}
 
-%\section{Master thesis}
-%\cvline{title}{\emph{Title}}
-%\cvline{supervisors}{Supervisors}
-%\cvline{description}{\small Short thesis abstract}
-
 \section{Experience}
+\subsection{Research experience}
+
 \cventry{2010--present}{Work Package manager}{Create-Net}{Trento}{}{Leader of Work Package 4 (FIT4Green) and 5 (DC4Cities). Research and design the algorithms and policies for energy-aware optimization of data centre operations.
 \begin{itemize}
   \item	WP management,
@@ -49,6 +40,8 @@
   \item Coordination of the implementation of the platform.
 \end{itemize}
 }
+
+\subsection{Industrial experience}
 \cventry{2003--2008}{Project Leader}{DCNS/EADS}{Aix en Provence, France}{}{Projects for the Norway frigates SKJOLD and the Franco-Italian frigates HORIZON
 \begin{itemize}
   \item Technical leader and project leader (CMMi 3), with a team of 4 persons for the realization of the Real Time Simulator (DCNS)
@@ -71,16 +64,12 @@ MS-Project, project management tools, SQL.
 \cvlanguage{English}{Fluent}{647/700 TOEFL, 980/990 TOEIC, work \& everyday language}
 \cvlanguage{Italian}{Fluent}{living in Italy since 2010}
 \cvlanguage{French}{Native}{}
+\cvlanguage{Spanish, Czech}{Beginner}{}
 
 \section{Computer skills}
 \cvcomputer{Operating Systems}{Linux, Windows, Solaris, HP-UX}{Languages}{Haskell, Java, C++, Ada}
 \cvcomputer{Programming techniques}{Constraint Programming, Big Data: Hadoop}{Development and Specification}{Eclipse, Linux tools, Qt, Doors}
 \cvcomputer{Project Management}{CMMi 3 level, MS Project, OWB}{category 6}{XXX, YYY, ZZZ}
-
-\section{Interests}
-\cvline{Paragliding}{\small Flying since 20 years, licenced for taking passengers}
-\cvline{Hacking}{\small Author of a unique game called Nomyx: www.nomyx.net}
-\cvline{Language learning}{\small Spanish, Czech}
 
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
 
@@ -95,6 +84,10 @@ MS-Project, project management tools, SQL.
 \bibentry{dupont-unitn14}
 \bibliographystyle{plain}
 \bibliography{central-bibliography}
+
+\section{Hobbies}
+\cvline{Paragliding}{\small Flying since 20 years, licenced for taking passengers}
+\cvline{Hacking}{\small Author of a unique game called Nomyx: www.nomyx.net}
 
 \end{document}
 

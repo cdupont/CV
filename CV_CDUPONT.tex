@@ -1,9 +1,7 @@
 \documentclass[11pt,a4paper]{moderncv}
-
 \moderncvtheme[blue]{casual}
-
 \usepackage[utf8]{inputenc}
-
+\usepackage{bibentry}
 \usepackage[scale=0.8]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
@@ -86,12 +84,18 @@ MS-Project, project management tools, SQL.
 
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
 
-% Publications from a BibTeX file
-\nocite{*}
+
+\bibentry{dupont-adhoc14}
+\bibentry{dupont-eenergy12}
+\bibentry{quan2012}
+\bibentry{somov-funems13}
+\bibentry{quan-E2DC12}
+\bibentry{dupont-E2DC13}
+\bibentry{dupont-E2DC14}
+\bibentry{dupont-unitn14}
 \bibliographystyle{plain}
-\bibliography{publications}       % 'publications' is the name of a BibTeX file
+\bibliography{central-bibliography}
 
 \end{document}
 
 
-%% end of file `template_en.tex'.

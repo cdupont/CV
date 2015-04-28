@@ -1,6 +1,7 @@
 \documentclass[11pt,a4paper]{moderncv}
 \moderncvtheme[blue]{casual}
 \usepackage[utf8]{inputenc}
+\usepackage{natbib}
 \usepackage{bibentry}
 \usepackage[scale=0.8]{geometry}
 %\setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column with the dates
@@ -20,17 +21,26 @@
 
 \section{Education}
 \cventry{On-Going (3rd year)}{PhD}{University of Trento}{Trento}{}{Thesis on energy management in data centres}
-\cventry{2003}{MsD}{Institut Supérieur de l'Electronique et du Numérique}{Toulon}{}{}
+\cventry{2003}{MsD}{Institut Supérieur de l'Electronique et du Numérique}{Toulon}{}{Specialisation on Real Time computing}
 
 \section{Experience}
 \subsection{Research experience}
 
-\cventry{2010--present}{Work Package manager}{Create-Net}{Trento}{}{Leader of Work Package 4 (FIT4Green) and 5 (DC4Cities). Research and design the algorithms and policies for energy-aware optimization of data centre operations.
+\cventry{2010--present}{Work Package manager \& research team leader}{Create-Net}{Trento}{}{Leader of Work Package 4 (FIT4Green) and 5 (DC4Cities). Research and design the algorithms and policies for energy-aware optimization of data centre operations.
 \begin{itemize}
+  \item	leader of a team of 4 persons,
   \item	WP management,
   \item Algorithmic research, specification and design,
-  \item Implementation of FIT4Green prototype using Constraint Programming,
-  \item Paper writing and project proposal writing.
+  \item Implementation of FIT4Green \& DC4Cities prototypes.
+\end{itemize}
+}
+\cventry{2010--present}{Research funding}{Create-Net}{Trento}{}{
+\textcolor{blue}{Grants won:} DC4Cities EU project (WP leader) \\
+\textcolor{blue}{Proposal writing:} 
+\begin{itemize}
+\item Light4Cloud EU project (Proposal coordinator, under review)
+\item DC4Cities EU project (WP leader, won)
+\item 5 other EU proposals in IoT and Cloud computing (support/WP leader)
 \end{itemize}
 }
 \cventry{2011--2012}{Researcher}{Create-Net}{Trento}{}{Research in the area of Internet of Things. Leader of the iCore platform.
@@ -40,6 +50,8 @@
   \item Coordination of the implementation of the platform.
 \end{itemize}
 }
+
+\bigskip
 
 \subsection{Industrial experience}
 \cventry{2003--2008}{Project Leader}{DCNS/EADS}{Aix en Provence, France}{}{Projects for the Norway frigates SKJOLD and the Franco-Italian frigates HORIZON
@@ -51,7 +63,7 @@
 C++, Ada, Qt, Linux, CMMi tools, OWB, Doors, Vega Prime, Delta 3D
 }
 
-\cventry{2009--2010}{Sofware Leader}{PSA Peugeot-Citroën}{Paris, France}{}{Supplier’s management for the automatic gearbox AL4/AT8 for PSA Peugeot Citroën
+\cventry{2009--2010}{Software Leader}{PSA Peugeot-Citroën}{Paris, France}{}{Supplier’s management for the automatic gearbox AL4/AT8 for PSA Peugeot Citroën
 \begin{itemize}
   \item Specification writing
   \item Management of the supplier (evolutions, technical issues, project management).
@@ -67,25 +79,30 @@ MS-Project, project management tools, SQL.
 \cvlanguage{Spanish, Czech}{Beginner}{}
 
 \section{Computer skills}
-\cvcomputer{Operating Systems}{Linux, Windows, Solaris, HP-UX}{Languages}{Haskell, Java, C++, Ada, R}
-\cvcomputer{Programming techniques}{Constraint Programming, Big Data: Hadoop}{Development and Specification}{Eclipse, Linux tools, Qt, Doors}
-\cvcomputer{Project Management}{CMMi 3 level, MS Project, OWB}{category 6}{XXX, YYY, ZZZ}
+\cvcomputer{OSes:}{Linux, Windows, Solaris, HP-UX}{Languages:}{Haskell, Java, C++, Ada, R}
+\cvcomputer{Prog. techniques:}{Constraint Programming, Big Data (Hadoop)}{Development:}{Eclipse, Linux tools, Qt, Doors}
+\cvcomputer{Project Managmnt:}{CMMi 3 level, MS Project, OWB}{}{}
 
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
 
+\section{Publications}
 
-\bibentry{dupont-adhoc14}
-\bibentry{dupont-eenergy12}
-\bibentry{quan2012}
-\bibentry{somov-funems13}
-\bibentry{quan-E2DC12}
-\bibentry{dupont-E2DC13}
-\bibentry{dupont-E2DC14}
-\bibentry{dupont-unitn14}
 \bibliographystyle{plain}
-\bibliography{bibliography/central-bibliography}
+\nobibliography{bibliography/central-bibliography}
 
-Reviewer for: ...
+\begin{itemize}
+\item \bibentry{klingert-smart14}
+\item \bibentry{dupont-adhoc14}
+\item \bibentry{dupont-eenergy12}
+\item \bibentry{quan2012}
+\item \bibentry{somov-funems13}
+\item \bibentry{quan-E2DC12}
+\item \bibentry{dupont-E2DC13}
+\item \bibentry{dupont-E2DC14}
+\item \bibentry{dupont-unitn14}
+\end{itemize}
+
+Reviewer for Journal of Grid Computing, E-Energy, FGCS and others.
 
 \section{Hobbies}
 \cvline{Paragliding}{\small Flying since 20 years, licenced for taking passengers}

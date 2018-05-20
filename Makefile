@@ -1,4 +1,4 @@
-main = CV_CDUPONT
+main = main
 
 all: pdf
 
